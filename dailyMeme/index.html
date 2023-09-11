@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Meme</title>
+</head>
+<body>
+<div class="wrapper">
+	<p id="meme">meme</p>
+	<button id="btn">Get meme</button>
+
+</div>
+
+<script>
+	const meme = document.getElementById("meme");
+	const btn = document.getElementById("btn");
+
+	const api_url = "https://meme-api.com/gimme"
+
+
+	async function getMeme()
+	{
+		let response = await fetch (api_url);
+		let data = await response.json();
+
+		console.log(data.url);
+		meme.innerHTML = data.url
+
+
+
+	}
+getMeme()
+
+</script>
+
+</body>
+</html>
