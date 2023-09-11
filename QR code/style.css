@@ -1,0 +1,62 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	background: #262a2f;
+}
+
+.container
+{
+	width: 400px;
+	padding: 25px 35px;
+	background: #fff;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+.container p {
+	margin-bottom: 20px;
+}
+button{
+	width: 100%;
+	background: #494eea;
+	border-radius: 5px;
+	color: #fff;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	display: block;
+	padding: 10px;
+
+}
+#input_box
+{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px;
+
+
+
+}
+#qrImage{
+	width: 200px;,
+	border-radius: 10px;
+	max-height: 0px;
+	overflow: hidden;
+}
+
+#qrImage img {
+	width: 100%;
+	padding: 10px;
+}
+
+#qrImage .show {
+	max-height: 300px;
+    margin: 10px autO;
+    border: 1px solid #d1d1d1;
+
+
+}
+

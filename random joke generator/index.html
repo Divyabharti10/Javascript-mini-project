@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Joke generator</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+	<span>&#128514</span>
+	<p id="text"></p>
+	<button id="btn" onclick="getJoke()">Get random joke</button>
+</div>
+
+
+<script type="text/javascript">
+	
+	const jokeContainer = document.getElementById('joke');
+	const btn = document.getElementById('btn');
+	const url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist&type=single"
+
+
+	async function getJoke()
+	{ const response = await fetch (url);
+	var data = await response.json();
+	console.log(data);
+	text.innerHTML = data.joke;
+
+
+	}
+
+	getJoke();
+
+</script>
+
+
+</body>
+</html>
